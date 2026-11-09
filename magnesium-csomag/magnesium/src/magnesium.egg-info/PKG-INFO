@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: magnesium
+Version: 0.1.3
+Summary: Parancssoros eszköz fejlesztőknek: látványos animációk és időt spórló parancsok.
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Magnesium
+
+Parancssoros eszköz fejlesztőknek: látványos animációk és időt spórló parancsok.
+
+## Telepítés
+
+```bash
+pip install magnesium
+```
+
+## Használat
+
+```bash
+magnesium              # interaktív mód indító animációval
+magnesium --no-anim    # animáció nélkül
+magnesium sysinfo      # egyetlen parancs futtatása
+```
+
+## Új parancs hozzáadása
+
+`src/magnesium/commands.py`:
+
+```python
+@command("hello", "Köszönés")
+def cmd_hello(args):
+    print("Szia!")
+```
+
+## Szponzorok
+
+A szponzorok az indító animációban jelennek meg. Lásd: `src/magnesium/sponsors.py`.
+
+## Fejlesztés
+
+```bash
+pip install -e .
+```

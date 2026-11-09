@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/magnesium/__init__.py
+src/magnesium/__main__.py
+src/magnesium/animation.py
+src/magnesium/cli.py
+src/magnesium/commands.py
+src/magnesium/sponsors.py
+src/magnesium.egg-info/PKG-INFO
+src/magnesium.egg-info/SOURCES.txt
+src/magnesium.egg-info/dependency_links.txt
+src/magnesium.egg-info/entry_points.txt
+src/magnesium.egg-info/top_level.txt

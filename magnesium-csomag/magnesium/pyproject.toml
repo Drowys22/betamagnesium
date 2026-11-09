@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# FIGYELEM: a "magnesium" név a PyPI-n lehet, hogy foglalt. Ellenőrizd: https://pypi.org/project/magnesium/
+# Ha foglalt, használj pl. "magnesium-cli"-t (a parancs neve attól még "magnesium" marad).
+name = "magnesium"
+version = "0.1.3"
+description = "Parancssoros eszköz fejlesztőknek: látványos animációk és időt spórló parancsok."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+magnesium = "magnesium.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
